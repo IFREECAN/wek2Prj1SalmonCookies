@@ -9,6 +9,15 @@ var pikeStore = {
   storeName: 'pikeStore',
   //*zero=storeopening at 6:00am and lastvalue= closingtime from store opening which is 8:00PM//
   productSoldPerHour: [],
+
+  //the below should give me the a projected average number of cookies sole based on the range of the min. and max. customers per times the average number of cookies sold to each customer.
+  averageCustomerPerHour: function () {
+    return Math.floor(Math.random()) * ((this.maxCustomerPerHour - this.minCustomerPerHour) + this.minCustomerPerHour));
+
+//note: maybe I could use for(var i=0, i < storeOpenedTimes; i++); and this should result in the average # of cookies sold in the store for each hour the store is opened...
+  for(var i=0, i < 15; i++) {
+    this.avgCookiesSoldPerHour * Math.floor(Math.random()) * ((this.maxCustomerPerHour - this.minCustomerPerHour) + this.minCustomerPerHour));
+  }
 }
 
 var seaTacAirportStore = {
@@ -18,6 +27,8 @@ var seaTacAirportStore = {
   storeName: 'seaTacAirportStore',
   //*zero=storeopening at 6:00am and lastvalue= closingtime from store opening which is 8:00PM//
   productSoldPerHour: [],
+  averageCustomerPerHour: function () {
+    return Math.floor(Math.random()) * ((this.maxCustomerPerHour - this.minCustomerPerHour) + this.minCustomerPerHour));
 }
 
 var seattleCenterStore = {
@@ -27,6 +38,8 @@ var seattleCenterStore = {
   storeName: 'seattleCenterStore',
   //*zero=storeopening at 6:00am and lastvalue= closingtime from store opening which is 8:00PM//
   productSoldPerHour: [],
+  averageCustomerPerHour: function () {
+    return Math.floor(Math.random()) * ((this.maxCustomerPerHour - this.minCustomerPerHour) + this.minCustomerPerHour));
 }
 
 var capitalHillStore = {
