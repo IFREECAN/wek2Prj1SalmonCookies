@@ -16,9 +16,11 @@ var pikeStore = {
 
 //note: maybe I could use for(var i=0, i < storeOpenedTimes; i++); and this should result in the average # of cookies sold in the store for each hour the store is opened...
   for(var i=0, i < 15; i++) {
-    this.avgCookiesSoldPerHour * Math.floor(Math.random()) * ((this.maxCustomerPerHour - this.minCustomerPerHour) + this.minCustomerPerHour));
+    avgCookiesSoldPerHour * Math.floor(Math.random()) * ((this.maxCustomerPerHour - this.minCustomerPerHour) + this.minCustomerPerHour));
   }
 }
+
+console.console.log(pikeStore.averageCookiesSoldPerHour());
 
 var seaTacAirportStore = {
   minCustomerPerHour: 3,
@@ -29,6 +31,12 @@ var seaTacAirportStore = {
   productSoldPerHour: [],
   averageCustomerPerHour: function () {
     return Math.floor(Math.random()) * ((this.maxCustomerPerHour - this.minCustomerPerHour) + this.minCustomerPerHour));
+
+    for(var i = 0, i < 15; i++) {
+      avgCookiesSoldPerHour * Math.floor(Math.random()) * ((this.maxCustomerPerHour - this.minCustomerPerHour) + this.minCustomerPerHour));
+    }
+
+    console.log(seaTacAirportStore.avgCookiesSoldPerHour())
 }
 
 var seattleCenterStore = {
@@ -40,7 +48,12 @@ var seattleCenterStore = {
   productSoldPerHour: [],
   averageCustomerPerHour: function () {
     return Math.floor(Math.random()) * ((this.maxCustomerPerHour - this.minCustomerPerHour) + this.minCustomerPerHour));
+
+    for(var i = 0, i < 15; i++) {
+      avgCookiesSoldPerHour * Math.floor(Math.random()) * ((this.maxCustomerPerHour - this.minCustomerPerHour) + this.minCustomerPerHour));
 }
+
+console.log(seattleCenterStore.averageCookiesSoldPerHour())
 
 var capitalHillStore = {
   minCustomerPerHour: 20,
@@ -53,7 +66,7 @@ var capitalHillStore = {
     return Math.floor(Math.random()) * ((this.maxCustomerPerHour - this.minCustomerPerHour) + this.minCustomerPerHour));
   }
 }
-console.log(capitalHillStore.averageCookiesPerHour())
+console.log(capitalHillStore.averageCookiesSoldPerHour())
 
 var alkiStore = {
   minCustomerPerHour: 2,
@@ -68,7 +81,27 @@ var alkiStore = {
 
 }
 
-console.log(alkiStore.averageCookiesPerHour())
+console.log(alkiStore.averageCookiesSoldPerHour())
+
+
+function makeHTML(){
+  var container = document.createElement(div);
+  container.innerHTML = '<p>' + alkiStore.averageCustomerPerHour() + '</p>';
+  document.body.appenChild(container);
+
+  var list = document.createElement('ul');
+  var listArr = [];
+
+
+for(var i = 0; i < alkiStore.avgCookiesSoldPerHour.length; i++) {
+  listArr.push('<li>' + alkiStore.avgCookiesSoldPerHour[i] + '</li>');
+}
+
+var fullList = listArr.join('');
+list.innerHTML = fullList;
+document.body.appenChild(list);
+}
+
 
 /*
 acturalCustomerPerHourCount = function(store) {
