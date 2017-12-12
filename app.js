@@ -22,6 +22,27 @@ var pikeStore = {
 
 console.console.log(pikeStore.averageCookiesSoldPerHour());
 
+function makeHTML(){
+  var container = document.createElement(div);
+  container.innerHTML = '<p>' + alkiStore.averageCustomerPerHour() + '</p>';
+  document.body.appenChild(container);
+
+  var list = document.createElement('ul');
+  var listArr = [];
+
+
+for(var i = 0; i < pikeStore.avgCookiesSoldPerHour.length; i++) {
+  listArr.push('<li>' + pikeStore.avgCookiesSoldPerHour[i] + '</li>');
+}
+
+
+var fullList = listArr.join('');
+list.innerHTML = fullList;
+document.body.appenChild(list);
+}
+
+makeHTML(); //calling the html list..
+
 var seaTacAirportStore = {
   minCustomerPerHour: 3,
   maxCustomerPerHour: 24,
@@ -37,7 +58,30 @@ var seaTacAirportStore = {
     }
 
     console.log(seaTacAirportStore.avgCookiesSoldPerHour())
+
+    function makeHTML(){
+      var container = document.createElement(div);
+      container.innerHTML = '<p>' + alkiStore.averageCustomerPerHour() + '</p>';
+      document.body.appenChild(container);
+
+      var list = document.createElement('ul');
+      var listArr = [];
+
+
+    for(var i = 0; i < seaTacAirportStore.avgCookiesSoldPerHour.length; i++) {
+      listArr.push('<li>' + seaTacAirportStore.avgCookiesSoldPerHour[i] + '</li>');
+    }
+
+
+    var fullList = listArr.join('');
+    list.innerHTML = fullList;
+    document.body.appenChild(list);
+    }
+
+    makeHTML(); //calling the html list..
 }
+
+
 
 var seattleCenterStore = {
   minCustomerPerHour: 11,
@@ -67,6 +111,27 @@ var capitalHillStore = {
   }
 }
 console.log(capitalHillStore.averageCookiesSoldPerHour())
+
+function makeHTML(){
+  var container = document.createElement(div);
+  container.innerHTML = '<p>' + alkiStore.averageCustomerPerHour() + '</p>';
+  document.body.appenChild(container);
+
+  var list = document.createElement('ul');
+  var listArr = [];
+
+
+for(var i = 0; i < capitalHillStore.avgCookiesSoldPerHour.length; i++) {
+  listArr.push('<li>' + capitalHillStore.avgCookiesSoldPerHour[i] + '</li>');
+}
+
+
+var fullList = listArr.join('');
+list.innerHTML = fullList;
+document.body.appenChild(list);
+}
+
+makeHTML(); //calling the html list..
 
 var alkiStore = {
   minCustomerPerHour: 2,
