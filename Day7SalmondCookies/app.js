@@ -1,6 +1,8 @@
 
   //call it:: pikePlaceMarket.rander()
 
+ //git test 
+
   var storeOpenedTimes = ['06:00am', '07:00am', '08:00am', '09:00am', '10:00am', '11:00am', '12:00pm', '01:00PM', '02:00PM',
     '03:00PM', '04:00PM', '05:00PM', '06:00PM', '07:00PM']
 
