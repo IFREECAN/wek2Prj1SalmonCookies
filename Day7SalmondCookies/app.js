@@ -74,7 +74,7 @@ var salmonCookies = [];
 var cookiesTable = document.getElementByID('salmonCookies');
 
 //Constructor to make the table object
-function salmondCookiesStore('location', 'mincustomer', 'maxCustomer', 'avgCookiesPerCustomer', 'customerPerHour', 'cookiesSoldPerHour', 'totalDailySales'){
+function salmonCookiesStore('location', 'mincustomer', 'maxCustomer', 'avgCookiesPerCustomer', 'customerPerHour', 'cookiesSoldPerHour', 'totalDailySales') {
   this.location = location;
   this.mincustomer = mincustomer;
   this.maxCustomer = maxCustomer;
@@ -150,14 +150,15 @@ function salmondCookiesStore('location', 'mincustomer', 'maxCustomer', 'avgCooki
     //append the table data
     trElement.appendChild(tdElement);
 
+    salmonCookies.push(this);
   };
 }
 
-    new ( , , , , );
-    new ( , , , , );
-    new ( , , , , );
-    new ( , , , , );
-    new ( , , , , );
+    new SalmondCookiesStore('firstAndPike', 23, 65, 6.3);
+    new SalmondCookiesStore('seaTacAirportStore', 3, 24, 1.2);
+    new SalmondCookiesStore('seattleCenterStore', 11, 38, 3.7);
+    new SalmondCookiesStore('capitalHillStore', 20, 38, 2.3);
+    new SalmondCookiesStore('alkiStore', 2, 16, 4.6);
 
     //console.table('salmondCookiesStore');
 
@@ -238,10 +239,7 @@ function salmondCookiesStore('location', 'mincustomer', 'maxCustomer', 'avgCooki
                   //append the table header
                   trElement.appendChild(tdElement);
 
-
     }
-
-
 
   }
 
