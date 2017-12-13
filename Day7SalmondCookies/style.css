@@ -1,0 +1,36 @@
+body {
+  background-color: salmon;
+
+}
+
+h1 {
+  background-color: darkgreen;
+  text-emphasis: center;
+}
+
+fish {
+  image-orientation: center;
+}
+
+ul {
+  width: 100%;
+  background-color: gray;
+  border-top: 2px solid yellow;
+  border-bottom: 2px solid blue;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  padding: 5px 30px 5px 30px;
+}
+
+nav li a {
+  color: white;
+  font-family: havatica.;
+  font-style: bold;
+  
+}
