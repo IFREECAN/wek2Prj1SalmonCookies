@@ -1,7 +1,7 @@
 
   //call it:: pikePlaceMarket.rander()
 
- //git test 
+ //git test
 
   var storeOpenedTimes = ['06:00am', '07:00am', '08:00am', '09:00am', '10:00am', '11:00am', '12:00pm', '01:00PM', '02:00PM',
     '03:00PM', '04:00PM', '05:00PM', '06:00PM', '07:00PM']
@@ -59,6 +59,7 @@ alkiStore = new Stores('alkiStore', 2, 16, 4.6);
   //var rows = 6;
   //var columns = 7;
     //for(r = 0; r < rows; r++){
+
       //table += '<tr>';
         //for(c = 0; c < columns; c++){
           //table += '<td>' + c + '</td>'
@@ -247,3 +248,40 @@ function salmonCookiesStore('location', 'mincustomer', 'maxCustomer', 'avgCookie
 
 
 }
+
+
+
+// create function for cookiesSoldPerHour::
+
+
+
+//   this.calcCookiesSoldPerHour = function() {
+//   this.render = function (){
+//   allSalmonCookiesStores.push(this);  ***
+
+//   }
+// };
+//
+// //*************************************************************
+// // defind the actions you want performed on behalf...
+// //of the above elements (DECLEAR FUNCTIONS)
+// //*************************************************************
+//
+// this.calcCookiesSoldPerHour = function(){
+// this.calcCustomerPerHour()
+//   for(var i = 0; i < storeOpenedTimes.length; i++){
+//     var oneHour = Math.ceil(this.customerPerHour[i] * this.avgCookiesPerCustomer);
+//     //console.log(oneHour, 'oneHour');
+//     this.cookiesSoldPerHour.push(oneHour);
+//     this.totalDailySales += oneHour;
+//     // console.log(this.totalDailySales, 'total');
+//   }
+// };
+// rander = function(){
+//   this.calcCookiesSoldPerHour();
+//
+// }
+//   this.calcCustomerPerHour = function(){
+//     for(var i = 0; i < storeOpenedTimes.length; i++){
+//       this.customerPerHour.push(random(this.minCustomerPerHour, this.maxCustomerperHour)); // this is a methond because it is a function that is inside an object.
+//
