@@ -10,7 +10,7 @@ var allStores = [];
 
 //defind what the function random is:
 function random(min, max) {
-  return Math.floor(Math.random()) * ((max - min) + min)); // equation is fron MDN
+  return Math.floor(Math.random() * ((max - min) + min)); // equation is fron MDN
 }
 //Constructor to make the table object
 function salmonCookiesStore(location, minCustomer, maxCustomer, avgCookiesPerCustomer, customerPerHour, cookiesSoldPerHour, totalDailySales) {

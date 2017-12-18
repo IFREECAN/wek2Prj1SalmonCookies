@@ -9,7 +9,7 @@ var allStores = [];
 
 //defind what the function random is:
 function random(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min; // equation is fron MDN
+  return Math.floor(Math.random() * (max - min + 1) + min); // equation is fron MDN
 }
 //Constructor to make the table object
 function SalmondCookiesStore(location, minCustomer, maxCustomer, avgCookiesPerCustomer) {
@@ -24,6 +24,7 @@ function SalmondCookiesStore(location, minCustomer, maxCustomer, avgCookiesPerCu
   this.calcCustomerPerHour = function() {
     for(var i = 0; i < hours.length; i++) {
       var avgCustomers = random(this.minCustomer, this.maxCustomer); //random # being saved to "avgCustomers" for each store.
+      console.log(avgCustomers)
       this.avgCustomersPerHour.push(avgCustomers); //this is telling us to "push" random # into avgCustomersPerHour.
       return avgCustomers;
     }
@@ -31,7 +32,8 @@ function SalmondCookiesStore(location, minCustomer, maxCustomer, avgCookiesPerCu
   //create function for cookiesSoldPerHour:: (this fuction is within the Constructor-function)
   this.calcCookiesSoldPerHour = function(){
     for(var i = 0; i < hours.length; i++){
-      this.cookiesSoldPerHour.push(this.calcCustomerPerHour() * (this.avgCookiesPerCustomer)); //avg.-customer per hour x avg. cookies per-customer  = cookies sold per hour.
+      var num = Math.floor(this.calcCustomerPerHour() * this.avgCookiesPerCustomer)
+      this.cookiesSoldPerHour.push(num); //avg.-customer per hour x avg. cookies per-customer  = cookies sold per hour.
     }
   };
   this.totalDailySales = function(){

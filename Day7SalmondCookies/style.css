@@ -1,10 +1,19 @@
+
+
+/*this centers the entire page*/
+#container{
+width: 900px;
+margin: auto;
+
+}
+
 body {
-  background-color: salmon;
+  background-color: #f45c42;
 
 }
 
 h1 {
-  background-color: darkgreen;
+  background-color: #58775e;
   text-emphasis: center;
 }
 
@@ -14,9 +23,9 @@ fish {
 
 ul {
   width: 100%;
-  background-color: gray;
-  border-top: 2px solid yellow;
-  border-bottom: 2px solid blue;
+  background-color: #58775e;
+  /*border-top: 2px solid yellow;
+  border-bottom: 2px solid ;*/
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -32,5 +41,37 @@ nav li a {
   color: white;
   font-family: havatica.;
   font-style: bold;
-  
+}
+
+/*use the same table-ID used in JavaScript to style the tabel here*/
+
+#storeSalesTable {
+  width: 500px;
+  hight: 100px;
+  border: 3px solid navy;
+}
+
+td, th {
+  border: 1px solid black;
+  width: 100px;
+  height: 40px;
+  border-collapse: collapse; /*to remove the double-lines between columns and rows */
+  color: white;
+  background-color: #58775e;
+
+}
+
+
+#items {
+  pisition: right;
+}
+
+
+div.image {
+  width: ;
+  height: ;
+  border: solid gray;
+  margin: 5px;
+  padding: 20px;
+
 }
