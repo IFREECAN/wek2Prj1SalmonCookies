@@ -34,16 +34,28 @@ function SalmondCookiesStore(location, minCustomer, maxCustomer, avgCookiesPerCu
     for(var i = 0; i < hours.length; i++){
       var num = Math.floor(this.calcCustomerPerHour() * this.avgCookiesPerCustomer)
       this.cookiesSoldPerHour.push(num); //avg.-customer per hour x avg. cookies per-customer  = cookies sold per hour.
+      this.totalDailySales += num; //"num" gives us the total at each hour the store is opened, "+=" adds each hour's total to our daily total upto that point. 
+      console.log('total dialy sales at each store', this.totalDailySales)
     }
   };
-  this.totalDailySales = function(){
+
+
+
+    this.dayTotals = function (){
     for(var i = 0; i < hours.length; i++){
       this.totalDailySales += this.CookiesSoldPerHour[i]; //total daily sale = cookies sold per hour x total cookies sold at (each-hours = [i]) the store is opened
+      console.log('total sale for entire day' + this.totalDailySale)
     }
+    //to invoke a function we write function's name follow by parenthesis i.e: "functionA();"
+
+
+
+
   };
   this.render = function(){
     this.calcCookiesSoldPerHour();
 
+  //this.dayTotals();
     //CREATE TABLE-ROW
     var tableRowElement  = document.createElement('tr'); //noet: rows=tableRowElement
     //next: create table data

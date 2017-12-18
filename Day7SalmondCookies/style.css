@@ -67,11 +67,23 @@ td, th {
 }
 
 
-div.image {
+div.items {
   width: ;
-  height: ;
   border: solid gray;
   margin: 5px;
-  padding: 20px;
+  padding: 5px;
+  display: inline-block; /*this allows items to be side-by-side*/
+}
 
+div.shirt {
+  display: inline;
+  width: 75px;
+  /*border: solid gray;*/
+  margin: 5px;
+}
+
+  #fours{
+  padding: 1px;
+  margin: auto;
+  display: block;
 }
